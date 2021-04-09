@@ -1,0 +1,127 @@
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh
+$ git init          -------------------------------------------------------
+Initialized empty Git repository in C:/Users/DELL/Desktop/gfh/.git/
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git remote add origin git@github.com:guchengyifeng/kk.git -----------------------------
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git add . ---------------------------------------------------------------
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git commit -m "155" -----------------------------
+[master (root-commit) 462b53a] 155
+ 1 file changed, 1 insertion(+)
+ create mode 100644 adshj/1226.txt
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git push -u origin master -----------------------------
+The authenticity of host 'github.com (192.30.255.113)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,192.30.255.113' (RSA) to the list of known hosts.
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 241 bytes | 241.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/guchengyifeng/kk/pull/new/master
+remote:
+To github.com:guchengyifeng/kk.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git checkout main -----------------------------
+error: pathspec 'main' did not match any file(s) known to git
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git checkout main -----------------------------
+error: pathspec 'main' did not match any file(s) known to git
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git merge main -----------------------------
+merge: main - not something we can merge
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git pull -----------------------------
+Warning: Permanently added the RSA host key for IP address '192.30.255.112' to the list of known hosts.
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), 1.22 KiB | 49.00 KiB/s, done.
+From github.com:guchengyifeng/kk
+   462b53a..2d0f81d  master     -> origin/master
+ * [new branch]      main       -> origin/main
+Updating 462b53a..2d0f81d
+Fast-forward
+ adshj/1226.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git status -----------------------------
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git pull -----------------------------
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 677 bytes | 42.00 KiB/s, done.
+From github.com:guchengyifeng/kk
+   2d0f81d..64cf1af  master     -> origin/master
+error: Your local changes to the following files would be overwritten by merge:
+        adshj/1226.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 2d0f81d..64cf1af
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git status -----------------------------
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   adshj/1226.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git add . -----------------------------
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git commit -m "15" -----------------------------
+[master e4ec504] 15
+ 1 file changed, 1 insertion(+)
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git status -----------------------------
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+nothing to commit, working tree clean
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
+$ git pull -----------------------------
+Auto-merging adshj/1226.txt
+CONFLICT (content): Merge conflict in adshj/1226.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master|MERGING)
+$ git add . -----------------------------
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master|MERGING)
+$ git commit -m "16" -----------------------------
+[master 8b8ef91] 16
+
+DELL@DESKTOP-CJM0IN7 MINGW64 ~/Desktop/gfh (master)
